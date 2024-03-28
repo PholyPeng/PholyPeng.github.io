@@ -11423,7 +11423,7 @@ div.alert a {
 
 .article-metadata .author-highlighted {
     font-weight: 900;
-    color: rgba(230, 230, 230, .87)
+    color: rgba(20, 20, 20, .87)
 }
 
 article .article-metadata {
@@ -11432,6 +11432,11 @@ article .article-metadata {
 
 .dark .article-metadata {
     color: rgba(255, 255, 255, .54)
+}
+
+.dark .article-metadata .author-highlighted {
+    font-weight: 900;
+    color: rgba(230, 230, 230, .87)
 }
 
 .stream-meta.article-metadata {
