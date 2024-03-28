@@ -1,197 +1,442 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://thomasgultzow.com/ -->
+<html lang="en-us">
 
 <head>
-  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+    integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/fad964539d.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js"
+    integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css"
+    crossorigin="anonymous" title="hl-light" disabled>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css"
+    crossorigin="anonymous" title="hl-dark">
+
+  <link rel="preload" as="style" href="css/css2">
+  <link rel="stylesheet" href="css/css2" media="all">
+  <link rel="stylesheet" href="css/vendor-bundle.min.css" media="all">
+  <link rel="stylesheet" href="css/academic.css">
+  <link rel="stylesheet" href="css/wowchemy.css">
+
+  <meta name="author" content="Chensheng Peng">
+  <meta name="description" content="The personal academic website of Chensheng Peng.">
+  <link rel="alternate" hreflang="en-us" href="/">
+  <link rel="canonical" href="/">
+  <link rel="manifest" href="/index.webmanifest">
+
+  <link rel="icon" type="image/png" href="media/32x32.jpg">
+  <link rel="apple-touch-icon" type="image/png" href="media/192x192.jpg">
+  <meta name="theme-color" content="#1565c0">
+  <!-- <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@ThomasGultzow">
+  <meta property="twitter:creator" content="@ThomasGultzow">
+  <meta property="twitter:image"
+    content="media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"> -->
+
+  <meta property="og:site_name" content="Chensheng Peng">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Chensheng Peng">
+  <meta property="og:description" content="The personal academic website of Chensheng Peng.">
+  <meta property="og:image" content="media/512x512.jpg">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:updated_time" content="2024-03-27T14:52:35+00:00">
+
+  <link rel="alternate" href="index.xml" type="application/rss+xml" title="Chensheng Peng">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"
+    integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+  <script>const code_highlighting = true;</script>
+  <script src="/js/academic.min.e5c8525332f417fe3589df9a6b25b6c4.js"></script>
+  <script src="/js/netlify-identity-widget.js"></script>
+
+  <title>Home | page of Chensheng Peng</title>
   <style type="text/css">
-    ul,
-    li {
-      margin-left: 10px;
-      margin-right: 10px;
-      padding: 0px;
+    .medium-zoom-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .3s;
+      will-change: opacity
     }
 
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-      color: #1772d0;
-      text-decoration: none;
+    .medium-zoom--opened .medium-zoom-overlay {
+      cursor: pointer;
+      cursor: zoom-out;
+      opacity: 1
     }
 
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
+    .medium-zoom-image {
+      cursor: pointer;
+      cursor: zoom-in;
+      transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
     }
 
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px
+    .medium-zoom-image--hidden {
+      visibility: hidden
     }
 
-    .hp-photo {
-      width: 240px;
-      height: 240px;
-      border-radius: 240px;
-      -webkit-border-radius: 240px;
-      -moz-border-radius: 240px;
-    }
-
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-    }
-
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 24px;
-    }
-
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      color: #0d79e5;
-    }
-
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-    }
-
-    .one {
-      width: 160px;
-      height: 160px;
+    .medium-zoom-image--opened {
       position: relative;
-    }
-
-    .two {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
+      cursor: pointer;
+      cursor: zoom-out;
+      will-change: transform
     }
   </style>
-  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-  <title>Chensheng Peng</title>
-  <link rel="stylesheet" type="text/css" href="/imgs/css">
 </head>
 
-<body>
-  <div id="layout-content">
-    <div id="toptitle">
-      <h1>Chensheng Peng</h1>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark">
+  <script src="./js/wowchemy-init.min.js"></script>
+  <aside class="search-modal" id="search">
+    <div class="container">
+      <section class="search-header">
+        <div class="row no-gutters justify-content-between mb-3">
+          <div class="col-6">
+            <h1>Search</h1>
+          </div>
+          <div class="col-6 col-search-close"><a class="js-search" href="/#" aria-label="Close"><i
+                class="fas fa-times-circle text-muted" aria-hidden="true"></i></a></div>
+        </div>
+        <div id="search-box"><input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+            autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+            aria-label="Search..."></div>
+      </section>
+      <section class="section-search-results">
+        <div id="search-hits"></div>
+      </section>
     </div>
-    <table class="imgtable">
-      <tr>
-        <td>
-          <a href="https://PholyPeng.github.io/"><img src="picture/pcs.jpg" alt="alt text" width="120px" /></a>&nbsp;
-        </td>
-        <td align="left">
-          <p>Undergraduate student,<br />
-            Artificial Intelligence, Department of Automation, <br />
-            Member of <a href="https://en.zhiyuan.sjtu.edu.cn/en/about/overview">Zhiyuan Honors Program</a>, <br />
-            <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, <br />
-            Shanghai, 200240, China <br />
-            Email: <a href="mailto: pesiter159@gmail.com">pesiter159@gmail.com</a> <br />
-            <br />
-            <a href="pdf/CV_ChenshengPeng.pdf">[CV]</a> <a
-              href="https://scholar.google.com/citations?user=DbZxclcAAAAJ&hl=en&oi=sra">[Google Scholar]</a>
-            <a href="https://github.com/PholyPeng">[GitHub]</a>
-        </td>
-      </tr>
-    </table>
-    <h2>About me</h2>
-    <p>I'm an undergraduate student from Department of Automation, SJTU, studying Artificial Intelligence. </br>
-      I worked at <a href="https://irmv.sjtu.edu.cn/"> Intelligent Robotics and Machine Vision (IRMV) Lab</a>, advised by Prof. <a
-        href="https://scholar.google.com/citations?user=q6AY9XsAAAAJ&hl">Hesheng Wang</a>, who will be the General Chair of IEEE/RSJ IROS 2025. I also worked with the <a href="https://msc.berkeley.edu/research/autonomous-vehicle.html">Autonomous Driving Group</a> of MSC Lab at UC Berkeley as a research intern, advised by Prof. <a href=https://me.berkeley.edu/people/masayoshi-tomizuka>Masayoshi Tomizuka</a>. </p>
-
-    <h3>Interests:</h3>
-    <p> efficient point cloud processing, object detection and tracking, neural architecture search, autonomous driving,
-      edge computing</p>
-
-    <h2>Research experiences</h2>
-
-
-    <table width="100%" align="center" border="0" style="border: none;" cellspacing="0" cellpadding="20">
-      <tbody>
-        <tr>
-          <td width="25%" style="border: none;"><img src="./picture/mot.gif" alt="Tracking" width="225"
-              style="border-style: none"></td>
-          <td width="75%" valign="top" style="border: none;">
-            <p align="left" >
-              <papertitle>Interactive Multi-scale Fusion of 2D and 3D Features for Multi-object Tracking</papertitle>
-              <br>G. Wang*, <strong>C. Peng*</strong>, J. Zhang, and H. Wang (* indicates equal contributions)</br>
-              submitted to IEEE Transactions on Intelligent Transportation Systems (TITS)</br>
-              <a href="./pdf/mot.pdf">[Paper]</a><a href="./videos/tracking.MP4">[Video]</a>
-            </p>
-            <hr style="border:1 dashed #987cb9" width="99%" color=#987cb9 SIZE=1>
-            <p align="left" > I join the National College Students' Innovation Program, as a group leader.
-            <p align="justify" style="font-size:13px">
-            <ul align="left">
-              <li align="left" list-style: none;>The research is mainly about multi-object tracking based on
-                multi-sensor feature fusion.</li>
-              <li align="left">We realize more effective feature fusion by exploring the spatial relation between LiDAR
-                point clouds and image pixels.</li>
-              <li align="left"> We achieve high accuracy and outperform baselines on the KITTI dataset.</li>
-            </ul>
-            </p>
-            </p>
-            <p></p>
-          </td>
-        </tr>
-
- 
-
-        <!-- <tr>
-          <td width="25%" style="border: none;"><img src="./picture/sf.gif" alt="SceneFlow" width="225"
-              style="border-style: none"></td>
-          <td width="75%" valign="top" style="border: none;">
-            <p align="left" >
-              <papertitle>Efficient Scene Flow Learning for Large-scale 3D Point Clouds</papertitle></br>
-              <strong>C. Peng</strong>, G. Wang, X. Lo, C, Xu. M. Tomizuka, W. Zhan, and H. Wang </br>
-              submitted to IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</br>
-              <a href="./videos/seneflow.MP4">[Video]</a>
-            </p>
-            <hr style="border:1 dashed #987cb9" width="99%" color=#987cb9 SIZE=1>
-            <p align="left" > I join the <a href="https://msc.berkeley.edu/research/autonomous-vehicle.html">MSC Lab</a> of UC Berkeley, as a remote research intern.
-            <p align="justify" style="font-size:13px">
-            <ul align="left">
-              <li align="left" list-style: none;>The research is mainly about efficient scene flow prediction from large-scale point clouds</li>
-              <li align="left">Our proposed network achieves real-time processing of large-scale point clouds, adopting a dense representation of point clouds and a kernel-based grouping technique.
+  </aside>
+  <div class="page-header header--fixed">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+        <div class="container-xl">
+          <div class="d-none d-lg-inline-flex">
+            <a class="navbar-brand" href="#">Chensheng Peng</a>
+          </div>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+            aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span></button>
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand" href="/">Chensheng
+              Peng</a></div>
+          <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+            <ul class="navbar-nav d-md-inline-flex">
+              <li class="nav-item"><a class="nav-link active" href="#about" data-target="#about"><span>About
+                    me</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#featured"
+                  data-target="#featured"><span>Research</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact" data-target="#contact"><span>Contact</span></a>
               </li>
-              <li align="left"> The computing time and memory consumption are significantly reduced. </li>
             </ul>
-            </p>
-            </p>
-            <p></p>
-          </td>
-        </tr> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
 
-      </tbody>
-    </table>
+  <div class="page-body"><span class="js-widget-page d-none"></span>
+    <section id="about" class="home-section wg-about">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div id="profile"><img class="avatar avatar-circle" width="270" height="270" src="./picture/pic.jpg"
+                alt="csp">
+              <div class="portrait-title">
+                <h2>Chensheng Peng</h2>
+                <h3>PhD Student</h3>
+                <h3><a href="https://www.berkeley.edu/" target="_blank" rel="noopener"><span>University of California,
+                      Berkeley</span></a>
+                </h3>
+              </div>
+              <ul class="network-icon" aria-hidden="true">
+                <li><a href="mailto:chensheng_peng@berkeley.edu" aria-label="envelope"><i
+                      class="fas fa-envelope big-icon"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=DbZxclcAAAAJ" target="_blank" rel="noopener"
+                    aria-label="graduation-cap"><i class="fas fa-graduation-cap big-icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/chensheng-peng-023b34250/" target="_blank" rel="noopener"
+                    aria-label="linkedin"><i class="fab fa-linkedin big-icon"></i></a></li>
+                <li><a href="https://github.com/PholyPeng" target="_blank" rel="noopener" aria-label="github"><i
+                      class="fab fa-github big-icon"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1>About me</h1>
+            <div class="article-style">
+              <p>I am a Ph.D. student at UC Berkeley, working with Professor Masayoshi
+                Tomizuka, affiliated with <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley
+                  AI Research (BAIR)</a>, <a href="https://deepdrive.berkeley.edu/" target="_blank"
+                  rel="noopener">Berkeley DeepDrive (BDD)</a> and <a href="https://msc.berkeley.edu/" target="_blank"
+                  rel="noopener">MSC lab.</a></p>
+              <p>I received my Bachelor degree from Shanghai Jiao Tong University, where I was a happy undergrad
+                working with Professor Hesheng Wang.</p>
 
-    <div id="footer">
-      <div id="footer-text">
-        <br>Page generated 2022-09-18, by <a href="https://PholyPeng.github.io/">Chensheng Peng</a>.
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-subheading">Research Interests</div>
+                <ul class="ul-interests mb-0">
+                  <li>Perception for Autonomous Vehicles
+                    <ul class="ul-interests mb-0">
+                      <li>Multi-Sensor Fusion</li>
+                      <li>Efficient Vision Applications</li>
+                      <li>Object Detection and Tracking</li>
+                    </ul>
+                  </li>
+                  <li>Generative AI
+                    <ul class="ul-interests mb-0">
+                      <li>3D Generation from Text/Image</li>
+                      <li>Applications of Diffusion Models</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section id="featured" class="home-section wg-collection">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="center-text">
+          <h1 class="mt-0">Publications/Preprints</h1>
+        </div>
+        <div class="center-text">
+          <b>* denotes equal contribution</b>
+        </div><br>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-12">
+
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+                <img class="col-12 col-md-3 col-lg-4" src="./project/qslam.gif" alt="./project/qslam_alt.png">
+                <div class="col-12 col-md-6 col-lg-8">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://arxiv.org/abs/2403.08125">Q-SLAM: Quadric Representations for Monocular SLAM</a>
+                  </div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng*</span>, <span>Chenfeng Xu*</span>, <span>Yue
+                        Wang</span>,
+                      <span>Mingyu Ding</span>, <span> Heng Yang</span>, <span>Masayoshi Tomizuka</span>,
+                      <span>Kurt Keutzer</span>,
+                      <span>Marco Pavone</span>, <span>Wei Zhan</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Arxiv Preprint</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.08125"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <!-- <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.08125"
+                      target="_blank" rel="noopener">Code</a> -->
+                  </div>
+                  <a href="https://arxiv.org/abs/2403.08125" class="summary-link">
+                    <div class="article-style">
+                      <p>In this study, we propose a novel
+                        approach that reimagines volumetric representations through the lens of quadric forms. We posit
+                        that most scene components can be effectively represented as quadric planes. Leveraging this
+                        assumption, we reshape the volumetric representations with million of cubes by several quadric
+                        planes, which leads to more accurate and efficient modeling of 3D scenes in SLAM contexts.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-3 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://openaccess.thecvf.com/content/ICCV2023/html/Peng_DELFlow_Dense_Efficient_Learning_of_Scene_Flow_for_Large-Scale_Point_ICCV_2023_paper.html">DELFlow:
+                      Dense Efficient Learning of Scene Flow for Large-Scale Point Clouds</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng</span>, <span>Guangming Wang</span>, <span>
+                        Xian Wan Lo</span>, <span>Xinrui Wu</span>, <span>Chenfeng Xu</span>, <br> <span>Masayoshi
+                        Tomizuka</span>, <span>Wei Zhan</span>,<span> Hesheng Wang</span></div>
+                    <span class="article-date">2023</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">International Conference on Computer Vision (ICCV)</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2308.04383"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <!-- <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/IRMVLab/DELFlow"
+                      target="_blank" rel="noopener">Code</a> -->
+                  </div>
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Peng_DELFlow_Dense_Efficient_Learning_of_Scene_Flow_for_Large-Scale_Point_ICCV_2023_paper.html"
+                    class="summary-link">
+                    <div class="article-style">
+                      <p>Point clouds are naturally sparse, while image pixels are dense. The inconsistency limits
+                        feature fusion from both modalities for point-wise scene flow estimation. We regularize raw
+                        points to a
+                        dense format by storing 3D coordinates in 2D grids. We also present a novel warping
+                        projection technique to alleviate the information loss problem.
+                        Sufficient experiments demonstrate the efficiency and effectiveness of our method, outperforming
+                        the prior-arts on the FlyingThings3D and KITTI dataset.</p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-12 col-md-3 col-lg-6" src="./project/deflow.gif" alt="./project/delflow_alt.png">
+              </div>
+            </div>
+
+
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+                <img class="col-12 col-md-3 col-lg-6" src="./project/intermot.gif" alt="./project/intermot_alt.png">
+                <div class="col-12 col-md-3 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://ieeexplore.ieee.org/abstract/document/10132881">Interactive
+                      multi-scale fusion of 2D and 3D features for multi-object vehicle tracking</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng*</span>, <span>Guangming Wang*</span>, <span>
+                        Yingying Gu</span>, <span>Jinpeng Zhang</span>, <span> Hesheng Wang</span></div>
+                    <span class="article-date">2023</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">IEEE Transactions on Intelligent Transportation Systems</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2203.16268"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/IRMVLab/InterMOT"
+                      target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10132881" class="summary-link">
+                    <div class="article-style">
+                      <p>In this paper, we propose multi-scale interactive query and fusion between pixel-wise and
+                        point-wise features to
+                        obtain more discriminative features. In addition, an attention mechanism is utilized to conduct
+                        soft feature fusion between multiple pixels and points to avoid inaccurate match problems of
+                        previous single pixel-point fusion methods. Our method can achieve 90.32% MOTA and 72.44% HOTA
+                        on the KITTI benchmark
+                        and outperform other approaches without using multi-scale soft feature fusion.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-3 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://ieeexplore.ieee.org/document/10476688">
+                      PNAS-MOT: Multi-Modal Object Tracking with Pareto Neural Architecture Search</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng</span>, <span>Zhaoyu Zeng</span>, <span>
+                        Jinling Gao</span>, <span> Jundong Zhou</span>, <span>Masayoshi Tomizuka</span>, <span>Xinbing
+                        Wang</span>,
+                      <span>Chenghu Zhou</span>, <span>Nanyang Ye</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">IEEE Robotics and Automation Letters (RAL)</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.15712"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="https://github.com/PholyPeng/PNAS-MOT" target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://ieeexplore.ieee.org/document/10476688" class="summary-link">
+                    <div class="article-style">
+                      <p>In this paper,
+                        we explore the use of the neural architecture search (NAS) methods to search for efficient
+                        architectures for tracking, aiming for low real-time latency while maintaining relatively high
+                        accuracy. We also propose a multi-modal framework to improve the robustness. Experiments
+                        demonstrate
+                        that our algorithm can run on edge devices within lower latency constraints, thus greatly
+                        reducing the computational requirements for multi-modal object tracking while keeping lower
+                        latency.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-12 col-md-3 col-lg-6" src="./project/pnasmot.gif" alt="./project/pnasmot_alt.png">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="center-text mt-3">
+          <a href="https://scholar.google.com/citations?user=DbZxclcAAAAJ">See all publications<i
+              class="fas fa-angle-right"></i></a>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="contact" class="home-section wg-tag-cloud">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+          </div>
+          <div class="col-12 col-lg-8">
+            <ul>
+              <li>Email: chensheng_peng [AT] berkeley [DOT] edu</li>
+            </ul>
+            <ul class="fa-ul"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="page-footer">
+    <div class="container">
+      <footer class="site-footer">
+        <p class="powered-by copyright-license-text">© 2024 Me. This work is licensed under <a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC
+            ND 4.0</a></p>
+        <p class="powered-by footer-license-icons"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0"
+            rel="noopener noreferrer" target="_blank" aria-label="Creative Commons"><i
+              class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i></a></p>
+        <p class="powered-by">Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank"
+            rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes"
+            target="_blank" rel="noopener">open source</a> website builder that empowers creators.</p>
+      </footer>
     </div>
   </div>
 </body>

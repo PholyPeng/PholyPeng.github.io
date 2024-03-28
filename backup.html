@@ -1,782 +1,577 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- saved from url=(0029)https://guangmingw.github.io/ -->
-<html>
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://thomasgultzow.com/ -->
+<html lang="en-us">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=800">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+    integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/fad964539d.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js"
+    integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css"
+    crossorigin="anonymous" title="hl-light" disabled>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css"
+    crossorigin="anonymous" title="hl-dark">
+
+  <link rel="preload" as="style" href="css/css2">
+  <link rel="stylesheet" href="css/css2" media="all">
+  <link rel="stylesheet" href="css/vendor-bundle.min.css" media="all">
+  <link rel="stylesheet" href="css/academic.css">
+  <link rel="stylesheet" href="css/wowchemy.css">
+
+  <meta name="author" content="Chensheng Peng">
+  <meta name="description" content="The personal academic website of Chensheng Peng.">
+  <link rel="alternate" hreflang="en-us" href="/">
+  <link rel="canonical" href="/">
+  <link rel="manifest" href="/index.webmanifest">
+
+  <link rel="icon" type="image/png"
+    href="media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png"
+    href="media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <meta name="theme-color" content="#1565c0">
+  <!-- <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@ThomasGultzow">
+  <meta property="twitter:creator" content="@ThomasGultzow">
+  <meta property="twitter:image"
+    content="media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"> -->
+
+  <meta property="og:site_name" content="Chensheng Peng">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Chensheng Peng">
+  <meta property="og:description" content="The personal academic website of Chensheng Peng.">
+  <meta property="og:image"
+    content="media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:updated_time" content="2024-03-27T14:52:35+00:00">
+
+  <link rel="alternate" href="index.xml" type="application/rss+xml" title="Chensheng Peng">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"
+    integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+  <script>const code_highlighting = true;</script>
+  <script src="/js/academic.min.e5c8525332f417fe3589df9a6b25b6c4.js"></script>
+  <script src="/js/netlify-identity-widget.js"></script>
+
+  <title>Home | page of Chensheng Peng</title>
   <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-      color: #1772d0;
-      text-decoration: none;
+    .medium-zoom-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .3s;
+      will-change: opacity
     }
 
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
+    .medium-zoom--opened .medium-zoom-overlay {
+      cursor: pointer;
+      cursor: zoom-out;
+      opacity: 1
     }
 
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px
+    .medium-zoom-image {
+      cursor: pointer;
+      cursor: zoom-in;
+      transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
     }
 
-    .hp-photo {
-      width: 240px;
-      height: 240px;
-      border-radius: 240px;
-      -webkit-border-radius: 240px;
-      -moz-border-radius: 240px;
+    .medium-zoom-image--hidden {
+      visibility: hidden
     }
 
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-    }
-
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 24px;
-    }
-
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700
-    }
-
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-    }
-
-    .one {
-      width: 160px;
-      height: 160px;
+    .medium-zoom-image--opened {
       position: relative;
-    }
-
-    .two {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
+      cursor: pointer;
+      cursor: zoom-out;
+      will-change: transform
     }
   </style>
-
-  <title>Chensheng Peng</title>
-  <link rel="stylesheet" type="text/css" href="/imgs/css">
 </head>
 
-<body>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark">
+  <script src="./js/wowchemy-init.min.js"></script>
+  <aside class="search-modal" id="search">
+    <div class="container">
+      <section class="search-header">
+        <div class="row no-gutters justify-content-between mb-3">
+          <div class="col-6">
+            <h1>Search</h1>
+          </div>
+          <div class="col-6 col-search-close"><a class="js-search" href="/#" aria-label="Close"><i
+                class="fas fa-times-circle text-muted" aria-hidden="true"></i></a></div>
+        </div>
+        <div id="search-box"><input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+            autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+            aria-label="Search..."></div>
+      </section>
+      <section class="section-search-results">
+        <div id="search-hits"></div>
+      </section>
+    </div>
+  </aside>
+  <div class="page-header header--fixed">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+        <div class="container-xl">
+          <div class="d-none d-lg-inline-flex">
+            <a class="navbar-brand" href="/">Chensheng Peng</a>
+          </div>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+            aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span></button>
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand" href="/">Chensheng
+              Peng</a></div>
+          <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+            <ul class="navbar-nav d-md-inline-flex">
+              <li class="nav-item"><a class="nav-link active" href="#about" data-target="#about"><span>About
+                    me</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#featured"
+                  data-target="#featured"><span>Research</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact" data-target="#contact"><span>Contact</span></a>
+              </li>
+            </ul>
+          </div>
 
-    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-      <tbody>
-        <tr>
-          <td>
+          <!-- <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+            <li class="nav-item d-none d-lg-inline-flex"><a class="nav-link" href="https://twitter.com/PeterPe86073147"
+                target="_blank" rel="noopener" aria-label="twitter"><i class="fab fa-twitter"
+                  aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search"
+                  aria-hidden="true"></i></a></li>
+            <li class="nav-item dropdown theme-dropdown"><a href="#" class="nav-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-label="Display preferences"><i class="fas fa-moon" aria-hidden="true"></i></a>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item js-set-theme-light"><span>Light</span></a>
+                <a href="#" class="dropdown-item js-set-theme-dark"><span>Dark</span></a>
+                <a href="#" class="dropdown-item js-set-theme-auto dropdown-item-active"><span>Automatic</span></a>
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </nav>
+    </header>
+  </div>
 
-            <!--SECTION 2 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Research</heading>
-                    <p align="justify">My research interests include computer vision for autonomous robots and robot
-                      learning, specifically on topics such as visual/LiDAR odometry, depth estimation, optical/scene
-                      flow estimation, semantic segmentation, 3D point cloud learning, and deep reinforcement learning
-                      for robots.
-                    </p><br>
+  <div class="page-body"><span class="js-widget-page d-none"></span>
+    <section id="about" class="home-section wg-about">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div id="profile"><img class="avatar avatar-circle" width="270" height="270" src="./picture/pic.jpg"
+                alt="csp">
+              <div class="portrait-title">
+                <h2>Chensheng Peng</h2>
+                <h3>PhD Student</h3>
+                <h3><a href="https://www.berkeley.edu/" target="_blank" rel="noopener"><span>University of California,
+                      Berkeley</span></a>
+                </h3>
+              </div>
+              <ul class="network-icon" aria-hidden="true">
+                <li><a href="mailto:chensheng_peng@berkeley.edu" aria-label="envelope"><i
+                      class="fas fa-envelope big-icon"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=DbZxclcAAAAJ" target="_blank" rel="noopener"
+                    aria-label="graduation-cap"><i class="fas fa-graduation-cap big-icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/chensheng-peng-023b34250/" target="_blank" rel="noopener"
+                    aria-label="linkedin"><i class="fab fa-linkedin big-icon"></i></a></li>
+                <li><a href="https://github.com/PholyPeng" target="_blank" rel="noopener" aria-label="github"><i
+                      class="fab fa-github big-icon"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1>About me</h1>
+            <div class="article-style">
+              <p>I am a Ph.D. student at UC Berkeley, working with Professor <a
+                  href="https://scholar.google.com/citations?user=8m8taGEAAAAJ" target="_blank" rel="noopener">Masayoshi
+                  Tomizuka</a>, affiliated with <a href="https://bair.berkeley.edu/" target="_blank"
+                  rel="noopener">Berkeley AI Research (BAIR)</a>, <a href="https://deepdrive.berkeley.edu/"
+                  target="_blank" rel="noopener">Berkeley DeepDrive (BDD)</a> and <a href="https://msc.berkeley.edu/"
+                  target="_blank" rel="noopener">MSC lab.</a></p>
+              <p>I received my Bachelor degree from Shanghai Jiao Tong University, where I was a happy undergrad
+                working with Professor <a href="https://irmv.sjtu.edu.cn/team/" target="_blank" rel="noopener"> Hesheng
+                  Wang</a>.</p>
+              <!-- <p>I am also currently the chair of the <a href="https://ehps.net/digital-health-and-computer-tailoring/"
+                  target="_blank" rel="noopener">Digital Health &amp; Computer-Tailoring Special Interest Group
+                  (SIG)</a>👨‍💻 of the <a href="https://ehps.net/" target="_blank" rel="noopener">European Health
+                  Psychology Society (EHPS)</a> and editor-in-chief of the <a
+                  href="https://www.ehps.net/ehp/index.php/contents/index" target="_blank" rel="noopener">European
+                  Health Psychologist</a> 📰</p> -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-subheading">Research Interests</div>
+                <ul class="ul-interests mb-0">
+                  <li>Perception for Autonomous Vehicles
+                    <ul class="ul-interests mb-0">
+                      <li>Multi-Sensor Fusion</li>
+                      <li>Efficient Vision Applications</li>
+                      <li>Object Detection and Tracking</li>
+                    </ul>
+                  </li>
+                  <li>Generative AI
+                    <ul class="ul-interests mb-0">
+                      <li>3D Generation from Text/Image</li>
+                      <li>Applications of Diffusion Models</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="col-md-7">
+                <div class="section-subheading">Education</div>
+                <ul class="ul-edu fa-ul mb-0">
+                  <li><i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">PhD in Health Promotion, 2022</p>
+                      <p class="institution">Maastricht University</p>
+                    </div>
+                  </li>
+                  <li><i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">Master of Science in Health Education and Promotion, 2017</p>
+                      <p class="institution">Maastricht University</p>
+                    </div>
+                  </li>
+                  <li><i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">Bachelor of Science in Nursing, 2014</p>
+                      <p class="institution">Catholic University of Applied Sciences of North Rhine-Westphalia</p>
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="teaching" class="home-section wg-collection">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Teaching</h1>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p>Currently I am co-examiner of a course focused on qualitative research and review reports within other
+              method-focused courses. I also have (among other things) teaching experience in:</p>
+            <ul>
+              <li>Development, implementation, and evaluation of (behavior change) interventions</li>
+              <li>Health promotion</li>
+              <li>Behavior (change) theories</li>
+              <li>Self-regulation</li>
+              <li>Research methods</li>
+              <li>Anxiety disorders</li>
+              <li>Thesis supervision</li>
+            </ul>
+            <p>In 2021, I obtained my Basiskwalificatie Onderwijs (BKO) / Dutch University Teaching Qualification (UTQ).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="featured" class="home-section wg-collection">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="center-text">
+          <h1 class="mt-0">Publications/Preprints</h1>
+        </div>
+        <div class="center-text">
+          <b>* denotes equal contribution</b>
+        </div><br>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-12">
 
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+                <img class="col-12 col-md-3 col-lg-6" src="./picture/mot.gif" alt="1">
+                <div class="col-12 col-md-3 col-lg-6">
 
-                    <!-- <font color="red"><strong>Openings:</strong> </font></br></br>
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://arxiv.org/abs/2403.08125">Q-SLAM: Quadric Representations for Monocular SLAM</a>
+                  </div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng</span>, <span>Chenfeng Xu</span>, <span>Yue
+                        Wang</span>,
+                      <span>Mingyu Ding</span>, <span> Heng Yang</span>, <br> <span>Masayoshi Tomizuka</span>,
+                      <span>Kurt Keutzer</span>,
+                      <span>Marco Pavone</span>, <span>Wei Zhan</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Arxiv Preprint</span>
+                  </div>
 
-            <font color="red">Several fully funded PhD positions and Research Assistantships are available now. Welcome to drop me an email with your CV and transcripts. </font> -->
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--SECTION 3 -->
-
-            <!--SECTION 4 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Publications / Preprints</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--SECTION 5 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/20_arxiv_3d_odometry.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a
-                        href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_PWCLO-Net_Deep_LiDAR_Odometry_in_3D_Point_Clouds_Using_Hierarchical_CVPR_2021_paper.html">
-                        <papertitle>PWCLO-Net: Deep LiDAR Odometry in 3D Point Clouds Using Hierarchical Embedding Mask
-                          Optimization</papertitle>
-                      </a>
-                      <br> <strong>G. Wang*</strong>, X. Wu*, Z. Liu, and H. Wang<br>
-
-                      <a href="http://cvpr2021.thecvf.com/"> IEEE Conference on Computer Vision and Pattern Recognition
-                        (CVPR), 2021</a>
-                      <a href="https://arxiv.org/abs/2012.00972">arXiv</a>/
-                      <a
-                        href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_PWCLO-Net_Deep_LiDAR_Odometry_in_3D_Point_Clouds_Using_Hierarchical_CVPR_2021_paper.html">CVPR
-                        2021</a>/
-                      <a href="https://github.com/IRMVLab/PWCLONet">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn.html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                      <!-- <a href="https://arxiv.org/abs/2012.00972">arXiv</a> / -->
-                      <!-- <a href="https://github.com/QingyongHu/SpinNet"><font color="red">Code</font></a> -->
-                      <!-- <iframe src="https://ghbtns.com/github-btn.html?user=QingyongHu&repo=SpinNet&type=star&count=true&size=small" frameborder="0" scrolling="0" width="120px" height="20px"></iframe> -->
-                      <br>(* indicates equal contributions)
-                    </p>
-                    <p align="justify" style="font-size:13px">We introduce a novel 3D point cloud learning model for
-                      deep LiDAR odometry, named PWCLO-Net, using hierarchical embedding mask optimization. It
-                      outperforms all recent learning-based methods and outperforms the geometry-based approach, LOAM
-                      with mapping optimization, on most sequences of the KITTI odometry dataset.
-                    </p>
-                    <p></p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/Residual_Scene_Flow.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2109.04685">
-                        <papertitle> Residual 3D Scene Flow Learning with Context-Aware Feature Extraction</papertitle>
-                      </a>
-                      <br><strong>G. Wang*</strong>, Y. Hu*, X. Wu, and H. Wang
-                      <br>
-                      <em>IEEE Transactions on Instrumentation and Measurement (TIM)</em>, 2022 <font color="red">
-                        <strong>(IF=4.016)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2109.04685"> arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9754543"> IEEE Xplore</a>/
-                      <a href="https://github.com/IRMVLab/CARFlow">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(1).html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                      <br>(* indicates equal contributions)
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We propose a novel context-aware set conv layer to cope
-                      with repetitive patterns in the learning of 3D scene flow. We also propose an explicit residual
-                      flow learning structure in the residual flow refinement layer to cope with long-distance movement.
-                    </p>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td width="20%"><img src="./Guangming Wang _ The Shanghai Jiao Tong University_files/mul_posenet.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2112.03045">
-                        <papertitle> 3D Hierarchical Refinement and Augmentation for Unsupervised Learning of Depth and
-                          Pose from Monocular Video</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, J. Zhong, S. Zhao, W. Wu, Z. Liu, and H. Wang
-                      <br>
-                      <a href="https://arxiv.org/abs/2112.03045"> arXiv</a>
-                      <br>
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We propose a novel unsupervised training framework of
-                      depth and pose with 3D hierarchical refinement and augmentation using explicit 3D geometry. </p>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/efficient_odometry.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2111.02135">
-                        <papertitle> Efficient 3D Deep LiDAR Odometry</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, G. Wang, X. Wu, S. Jiang, Z. Liu, and H. Wang
-                      <br>
-                      <a href="https://arxiv.org/abs/2111.02135"> arXiv</a>
-                      <br>
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We propose the projection-aware representation of the 3D
-                      point cloud to organize the raw 3D point cloud into an ordered data form to achieve efficient 3D
-                      LiDAR odometry. </p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img src="./Guangming Wang _ The Shanghai Jiao Tong University_files/SFGAN.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202100197">
-                        <papertitle> SFGAN: Unsupervised Generative Adversarial Learning of 3D Scene Flow from the 3D
-                          Scene Self</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, C. Jiang, Z. Shen, Y. Miao, and H. Wang
-                      <br>
-                      <a href="https://onlinelibrary.wiley.com/page/journal/26404567/homepage/productinformation.html">Advanced
-                        Intelligent Systems (AIS)</a>, 2021 <font color="red"><strong>(AIS, A new
-                          SCI journal, no IF released)</strong></font><br>
-                      <a href="https://www.authorea.com/doi/full/10.22541/au.163335790.03073492">authorea</a>/
-                      <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202100197"> Wiley Online
-                        Library</a>
-                      <br>
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We utilize the generative adversarial networks (GAN) to
-                      self-learn 3D scene flow without ground truth. </p>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/20_arxiv_un_scene_flow.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://guangmingw.github.io/">
-                        <papertitle>Unsupervised Learning of Scene Flow from Monocular Camera</papertitle>
-                      </a>
-                      <br><strong>G. Wang*</strong>, X. Tian*, R. Ding, and H. Wang<br>
-
-                      <a href="http://www.icra2021.org/">International Conference on Robotics and Automation (ICRA),
-                        Xi'an, China, 2021. </a>
-                      <br>
-                      <a href="https://arxiv.org/abs/2206.03673">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9561572"> IEEE Xplore</a>
-                      <br>(* indicates equal contributions)
-
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We present a framework to realize the unsupervised
-                      learning of scene flow from monocular camera. </p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/20_arxiv_ASTAConv.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://ieeexplore.ieee.org/abstract/document/9522122/">
-                        <papertitle>Anchor-Based Spatio-Temporal Attention 3D Convolutional Networks for Dynamic 3D
-                          Point Cloud Sequences</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, H. Liu, M. Chen, Y. Yang, Z. Liu, and H. Wang<br>
-                      <em>IEEE Transactions on Instrumentation and Measurement (TIM)</em>, 2021 <font color="red">
-                        <strong>(IF=4.016)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2012.10860">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9522122/"> IEEE Xplore</a>/
-                      <a href="https://github.com/IRMVLab/ASTA3DConv">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(2).html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                      <br>
-                      <!--<font color="red"><strong>..</strong></font><br>-->
-                      <!-- <a href="http://arxiv.org/abs/2009.03137">arXiv</a> /
-                 <a href="https://www.youtube.com/watch?v=IG0tTdqB3L8">Demo</a> /
-                 <a href="https://github.com/QingyongHu/SensatUrban"><font color="red">Project page</font></a>
-                 <iframe src="https://ghbtns.com/github-btn.html?user=QingyongHu&repo=SensatUrban&type=star&count=true&size=small" frameborder="0" scrolling="0" width="120px" height="20px"></iframe> -->
-                      <!-- <br>(* indicates corresponding author) -->
-                      <!-- <br>(* indicates equal contributions) -->
-                    </p>
-                    <p align="justify" style="font-size:13px">We introduce an Anchor-based Spatial-Temporal Attention
-                      Convolution operation (ASTAConv) to process dynamic 3D point cloud sequences. It makes better use
-                      of the structured information within the local region, and learn spatial-temporal embedding
-                      features from dynamic 3D point cloud sequences.
-                    </p>
-                    <p></p>
-                  </td>
-                </tr>
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.08125"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <!-- <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.08125"
+                      target="_blank" rel="noopener">Code</a> -->
+                  </div>
+                  <a href="https://arxiv.org/abs/2403.08125" class="summary-link">
+                    <div class="article-style">
+                      <p>In this paper, we propose multi-scale interactive query and fusion between pixel-wise and
+                        point-wise features to
+                        obtain more discriminative features. In addition, an attention mechanism is utilized to conduct
+                        soft feature fusion between multiple pixels and points to avoid inaccurate match problems of
+                        previous single pixel-point fusion methods. Our method can achieve 90.32% MOTA and 72.44% HOTA
+                        on the KITTI benchmark
+                        and outperform other approaches without using multi-scale soft feature fusion.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
 
 
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/20_arxiv_HAFlowNet.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://ieeexplore.ieee.org/abstract/document/9435105/">
-                        <papertitle>Hierarchical Attention Learning of Scene Flow in 3D Point Clouds</papertitle>
-                      </a>
-                      <br><strong>G. Wang*</strong>, X. Wu*, Z. Liu, and H. Wang<br>
-                      <em>IEEE Transactions on Image Processing (TIP)</em>, 2021 <font color="red">
-                        <strong>(IF=10.856)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2010.05762">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9435105/">IEEE Xplore</a>/
-                      <a href="https://github.com/IRMVLab/HALFlow">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(3).html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                      <br>
-                      <!--<font color="red"><strong>..</strong></font><br>-->
-                      (* indicates equal contributions)
-                    </p>
-                    <p align="justify" style="font-size:13px">We introduce a novel hierarchical neural network with
-                      double attention for learning the correlation of point features in adjacent frames and refining
-                      scene flow from coarse to fine layer by layer. It has a new more-for-less hierarchical
-                      architecture. The proposed network achieves the state-of-the-art performance of 3D scene flow
-                      estimation on the FlyingThings3D and KITTI Scene Flow 2015 datasets.
-                    </p>
-                    <p></p>
-                  </td>
-                </tr>
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-3 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://openaccess.thecvf.com/content/ICCV2023/html/Peng_DELFlow_Dense_Efficient_Learning_of_Scene_Flow_for_Large-Scale_Point_ICCV_2023_paper.html">DELFlow:
+                      Dense Efficient Learning of Scene Flow for Large-Scale Point Clouds</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng</span>, <span>Guangming Wang</span>, <span>
+                        Xian Wan Lo</span>, <span>Xinrui Wu</span>, <span>Chenfeng Xu</span>, <br> <span>Masayoshi
+                        Tomizuka</span>, <span>Wei Zhan</span>,<span> Hesheng Wang</span></div>
+                    <span class="article-date">2023</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">International Conference on Computer Vision (ICCV)</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2308.04383"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <!-- <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/IRMVLab/DELFlow"
+                      target="_blank" rel="noopener">Code</a> -->
+                  </div>
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Peng_DELFlow_Dense_Efficient_Learning_of_Scene_Flow_for_Large-Scale_Point_ICCV_2023_paper.html"
+                    class="summary-link">
+                    <div class="article-style">
+                      <p>Point clouds are naturally sparse, while image pixels are dense. The inconsistency limits
+                        feature fusion from both modalities for point-wise scene flow estimation. We regularize raw
+                        points to a
+                        dense format by storing 3D coordinates in 2D grids. We also present a novel warping
+                        projection technique to alleviate the information loss problem.
+                        Sufficient experiments demonstrate the efficiency and effectiveness of our method, outperforming
+                        the prior-arts on the FlyingThings3D and KITTI dataset.</p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-12 col-md-3 col-lg-6" src="./picture/mot.gif" alt="2">
+              </div>
+            </div>
 
 
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
+                <img class="col-12 col-md-3 col-lg-6" src="./picture/mot.gif" alt="1">
+                <div class="col-12 col-md-3 col-lg-6">
 
-                <tr>
-                  <td width="20%"><img src="./Guangming Wang _ The Shanghai Jiao Tong University_files/nccflow.png"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2107.03610">
-                        <papertitle> NccFlow: Unsupervised Learning of Optical Flow With Non-occlusion from Geometry
-                        </papertitle>
-                      </a>
-                      <br><strong>G. Wang*</strong>, S. Ren*, and H. Wang
-                      <br>
-                      <em>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</em>, 2022 <font color="red">
-                        <strong>(IF=6.492)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2107.03610"> arXiv</a>/
-                      <a href="https://github.com/IRMVLab/NccFlow">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(4).html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                      <br>
-                      (* indicates equal contributions)
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We introduce a novel unsupervised learning method of
-                      optical flow by considering the constraints in non-occlusion regions with geometry analysis. </p>
-                  </td>
-                </tr>
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://ieeexplore.ieee.org/abstract/document/10132881">Interactive
+                      multi-scale fusion of 2D and 3D features for multi-object vehicle tracking</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng*</span>, <span>Guangming Wang*</span>, <span>
+                        Yingying Gu</span>, <span>Jinpeng Zhang</span>, <span> Hesheng Wang</span></div>
+                    <span class="article-date">2023</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">IEEE Transactions on Intelligent Transportation Systems</span>
+                  </div>
 
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/3D_human_pose.gif" alt="PontTuset"
-                      width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2106.14706">
-                        <papertitle> Motion Projection Consistency Based 3D Human Pose Estimation with Virtual Bones
-                          from Monocular Videos</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, H. Zeng, Z. Wang, Z. Liu, and H. Wang
-                      <br>
-                      <em>IEEE Transactions on Cognitive and Developmental Systems (TCSD)</em>, 2022 <font color="red">
-                        <strong>(IF=4.546)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2106.14706"> arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/document/9802736"> IEEE Xplore</a>
-                      <br>
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We introduce a novel unsupervised learning method of 3D
-                      human pose by considering the loop constraints from real/virtual bones and the joint motion
-                      constraints in consecutive frames. </p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/arxiv_Spherical_ Interpolated.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2011.13784">
-                        <papertitle>Spherical Interpolated Convolutional Network with Distance-Feature Density for 3D
-                          Semantic Segmentation of Point Clouds</papertitle>
-                      </a>
-                      <br><strong>G. Wang*</strong>, Y. Yang, Z. Liu, and H. Wang <br>
-                      <em>IEEE Transactions on Cybernetics (T-Cyb)</em>, 2021 <font color="red">
-                        <strong>(IF=11.448)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2011.13784">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9606554/">IEEE Xplore</a>
-                      <br>
-                      <!-- / -->
-                      <!-- <a href="https://github.com/alextrevithick/GRF"><font color="red">Code</font></a> -->
-                      <!-- <iframe src="https://ghbtns.com/github-btn.html?user=alextrevithick&repo=GRF&type=star&count=true&size=small" frameborder="0" scrolling="0" width="120px" height="20px"></iframe> -->
-
-                    </p>
-                    <p align="justify" style="font-size:13px">We introduce a spherical interpolated convolution operator
-                      to replace the traditional grid-shaped 3D convolution operator. It improves the accuracy and
-                      reduces the parameters of the network.
-                    </p>
-                    <p></p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/20_arxiv_DDPGwB.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://arxiv.org/abs/2011.12105">
-                        <papertitle>Achieving Sample-Efficient and Online-Training-Safe Deep Reinforcement Learning with
-                          Base Controllers</papertitle>
-                      </a>
-                      <br>M. Xin, <strong>G. Wang</strong>, Z. Liu, and H. Wang
-                      <br>
-                      <a href="https://arxiv.org/abs/2011.12105"> arXiv</a>
-                      <br>
-                      <!-- Submitted to 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), under review.  -->
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px">We introduce a method of learning challenging
-                      sparse-reward tasks utilizing existing controllers. Compared to previous works of learning from
-                      demonstrations, our method improves sample efficiency by orders of magnitude and can learn online
-                      in a safe manner. </p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="20%"><img src="./Guangming Wang _ The Shanghai Jiao Tong University_files/DOPlearning.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://ieeexplore.ieee.org/document/9152137">
-                        <papertitle>Unsupervised Learning of Depth, Optical Flow and Pose with Occlusion From 3D
-                          Geometry</papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, C. Zhang, H. Wang, J. Wang, Y. Wang, and X. Wang<br>
-                      <em>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</em>, 2020 <font color="red">
-                        <strong>(IF=6.492)</strong></font><br>
-                      <a href="https://arxiv.org/abs/2003.00766">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/document/9152137">IEEE Xplore</a>/
-                      <font color="red"> News:</font>
-                      <a href="https://mp.weixin.qq.com/s/NXr2-AOrl_VllIs_2buLwA">
-                        <font color="red">(DeepBlue深兰科技,</font>
-                      </a>
-                      <a href="https://ifosa.org/invited.html">
-                        <font color="red">The First International Forum on 3D Optical Sensing and Applications (iFOSA
-                          2020),</font>
-                      </a>
-                      <!-- <a href="https://mp.weixin.qq.com/s/C1FDPkAkmnmAZ_gvvtzBHw"><font color="red">AI科技评论,</font></a>
-                <a href="https://mp.weixin.qq.com/s/wViZITtsb4j3oFtOpJI9wQ"><font color="red">将门创投,</font></a>
-                <a href="https://mp.weixin.qq.com/s/S7mHrOxOwTIhDGPhu1SI4A"><font color="red">CVer,</font></a> -->
-                      <a href="https://mp.weixin.qq.com/s/GaS2F-2-aEQIJ-6ZLahynQ">
-                        <font color="red">计算机视觉life)</font>/
-                      </a>
-                      <a href="https://www.youtube.com/watch?v=Y8Up9OsZbcg">
-                        <font color="red">Video</font>
-                      </a>/
-                      <a href="https://github.com/Yang7879/AttSets">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(5).html"
-                        frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                    </p>
-                    <p></p>
-                    <p align="justify" style="font-size:13px"> We propose a method to explicitly handle occlusion,
-                      propose the less-than-mean mask, the maximum normalization, and the consistency of depth-pose and
-                      optical flow in the occlusion regions. </p>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td width="20%"><img
-                      src="./Guangming Wang _ The Shanghai Jiao Tong University_files/occlusion_mask.gif"
-                      alt="PontTuset" width="180" style="border-style: none"></td>
-                  <td width="80%" valign="top">
-                    <p><a href="https://ieeexplore.ieee.org/abstract/document/8793622">
-                        <papertitle>Unsupervised Learning of Monocular Depth and Ego-Motion Using Multiple Masks
-                        </papertitle>
-                      </a>
-                      <br><strong>G. Wang</strong>, H. Wang, Y. Liu, and W. Chen
-                      <br>
-                      <em>International Conference on Robotics and Automation (ICRA)</em>, Montreal, Canada, 2019
-                      <br>
-                      <!--<font color="red"><strong>..</strong></font><br>-->
-                      <a href="https://arxiv.org/abs/2104.00431">arXiv</a>/
-                      <a href="https://ieeexplore.ieee.org/abstract/document/8793622">IEEE Xplore</a> /
-                      <!-- <a href="http://kaldir.vc.in.tum.de/scannet_benchmark/result_details?id=118">ScanNet Benchmark</a> / -->
-                      <!-- <a href="https://www.reddit.com/r/MachineLearning/comments/bx8jhz/r_new_sota_for_3d_object_detection/">Reddit Discussion</a> / -->
-                      <font color="red"> News:</font>
-                      <a href="https://mp.weixin.qq.com/s/sKSb-dLRTifiwK9hcx_Vcg">
-                        <font color="red">(泡泡机器人,</font>
-                      </a>
-                      <!-- <a href="https://mp.weixin.qq.com/s/4GPkmTri4Vk7Xy0J8TiBNw"><font color="red">图像算法,</font></a>
-                 <a href="https://mp.weixin.qq.com/s/C1FDPkAkmnmAZ_gvvtzBHw"><font color="red">AI科技评论,</font></a>
-                 <a href="https://mp.weixin.qq.com/s/wViZITtsb4j3oFtOpJI9wQ"><font color="red">将门创投,</font></a>
-                 <a href="https://mp.weixin.qq.com/s/S7mHrOxOwTIhDGPhu1SI4A"><font color="red">CVer,</font></a> -->
-                      <a href="https://mp.weixin.qq.com/s/-IcQKYpXcs6CPme8d7Jbww">
-                        <font color="red">上海交大研究生教育)</font>/
-                      </a>
-                      <a
-                        href="https://ieeexplore.ieee.org/ielx7/8780387/8793254/8793622/2533_MM.zip?tp=&amp;arnumber=8793622">
-                        <font color="red">Video</font>
-                      </a>/
-                      <a href="https://github.com/guangmingw/DOPlearning">
-                        <font color="red">Code</font>
-                      </a>
-                      <iframe src="./Guangming Wang _ The Shanghai Jiao Tong University_files/github-btn(6).html"
-                        frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                    </p>
-                    <p align="justify" style="font-size:13px">We propose a new unsupervised learning method of depth and
-                      ego-motion using multiple masks to handle the occlusion problem.</p>
-                    <p></p>
-                  </td>
-                </tr>
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2203.16268"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/IRMVLab/InterMOT"
+                      target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10132881" class="summary-link">
+                    <div class="article-style">
+                      <p>In this paper, we propose multi-scale interactive query and fusion between pixel-wise and
+                        point-wise features to
+                        obtain more discriminative features. In addition, an attention mechanism is utilized to conduct
+                        soft feature fusion between multiple pixels and points to avoid inaccurate match problems of
+                        previous single pixel-point fusion methods. Our method can achieve 90.32% MOTA and 72.44% HOTA
+                        on the KITTI benchmark
+                        and outperform other approaches without using multi-scale soft feature fusion.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
 
 
 
+            <div class="card-simple view-card">
+              <div class="row align-items-center">
 
-              </tbody>
-            </table>
+                <div class="col-12 col-md-3 col-lg-6">
 
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://ieeexplore.ieee.org/document/10476688">
+                      PNAS-MOT: Multi-Modal Object Tracking with Pareto Neural Architecture Search</a></div>
+                  <div class="article-metadata">
+                    <div><span class="author-highlighted">Chensheng Peng</span>, <span>Zhaoyu Zeng</span>, <span>
+                        Jinling Gao</span>, <span> Jundong Zhou</span>, <span>Masayoshi Tomizuka</span>, <span>Xinbing
+                        Wang</span>,
+                      <span>Chenghu Zhou</span>, <span>Nanyang Ye</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">IEEE Robotics and Automation Letters (RAL)</span>
+                  </div>
 
-            <!--SECTION 6 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Talks &amp; Academic Services</heading>
-                    <p style="font-size:13px"> <strong>[2021.06]</strong> Conference Talk on “PWCLO-Net: Deep LiDAR
-                      Odometry in 3D Point Clouds Using Hierarchical Embedding Mask Optimization” at <a
-                        href="http://cvpr2021.thecvf.com/">CVPR 2021 </a> in CVPR Virtual, June 19-25, 2021.</p>
-                    <p style="font-size:13px"> <strong>[2021.05]</strong> Conference Talk on “Unsupervised Learning of
-                      Scene Flow from Monocular Camera” at <a href="http://www.icra2021.org/"> ICRA 2021</a> in Xi’an,
-                      China, May 30 - June 5, 2021. </p>
-                    <p style="font-size:13px"> <strong>[2020.10]</strong> Invited Talk on “Unsupervised Learning of
-                      Depth, Optical Flow and Pose with Occlusion From 3D Geometry” at <a
-                        href="https://ifosa.org/invited.html"> the First International Forum on 3D Optical Sensing and
-                        Applications (iFOSA 2020)</a> held in Being, China, October 17-18, 2020.</p>
-                    <p style="font-size:13px"> <strong>[2019.07]</strong> Seminar Talk on “Unsupervised Learning of
-                      Monocular Depth and Ego-Motion Using Multiple Masks” at <a
-                        href="https://guangmingw.github.io/imgs/SEEEP.mp4">Sino-European Engineering Education Platform
-                        (SEEEP) Doctoral Summer School</a> in Instituto Superior Técnico (IST), Lisbon, Portugal, July
-                      22-25, 2019.</p>
-                    <p style="font-size:13px"> <strong>[2019.05]</strong> Conference Talk on “Unsupervised Learning of
-                      Monocular Depth and Ego-Motion Using Multiple Masks” at <a
-                        href="https://mp.weixin.qq.com/s/-IcQKYpXcs6CPme8d7Jbww">ICRA 2019</a> in Montreal, Canada, May
-                      20-24, 2019.</p>
-                    <!-- <p style="font-size:13px"> <strong>[2020.04]</strong> Invited talk about 3D reconstruction at Sun Yat-sen University, hosted by <a href="http://yulanguo.me/">Prof. Yulan Guo</a>.</p> -->
-                    <p style="font-size:13px"> <strong>[2019 - present]</strong> Reviewer: IEEE Conference on Computer
-                      Vision and Pattern Recognition (CVPR), IEEE International Conference on Computer Vision (ICCV),
-                      European Conference on Computer Vision (ECCV), IEEE Robotics and Automation Letters (RAL),
-                      International Conference on Robotics and Automation (ICRA), International Conference on
-                      Intelligent Robots and Systems (IROS), European Conference on Mobile Robots (ECMR), International
-                      Journal of Computer Vision (IJCV), IEEE Transactions on Cybernetics (T-cyb), IEEE Transactions on
-                      Automation Science and Engineering (T-ASE), IEEE Transactions on Industrial Informatics (T-II),
-                      Neurocomputing, International Journal of Humanoid Robotics (IJHR), Geo-spatial Information Science
-                      (GIS), International Journal of Social Robotics (IJSR).</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2403.15712"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="https://github.com/PholyPeng/PNAS-MOT" target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://ieeexplore.ieee.org/document/10476688" class="summary-link">
+                    <div class="article-style">
+                      <p>In this paper,
+                        we explore the use of the neural architecture search (NAS) methods to search for efficient
+                        architectures for tracking, aiming for low real-time latency while maintaining relatively high
+                        accuracy. We also propose a multi-modal framework to improve the robustness. Experiments
+                        demonstrate
+                        that our algorithm can run on edge devices within lower latency constraints, thus greatly
+                        reducing the computational requirements for multi-modal object tracking while keeping lower
+                        latency.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-12 col-md-3 col-lg-6" src="./picture/mot.gif" alt="2">
+              </div>
+            </div>
 
+          </div>
+        </div>
 
-            <!--SECTION 6 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Teaching</heading>
-                    <p> <strong>Nov. 2019 - Jun. 2020</strong>:    Direct four undergraduate graduation projects of
-                      SJTU, one of which was submitted to <a href="https://arxiv.org/abs/2011.12105">ICRA 2021</a>. (<a
-                        href="http://en.sjtu.edu.cn/">The Shanghai Jiao Tong University, SJTU</a>). </p>
-                    <p> <strong>Jul. 2020 - Aug. 2020</strong>:    Direct seven junior undergraduates in summer
-                      laboratory practice. (<a href="http://en.sjtu.edu.cn/">The Shanghai Jiao Tong University,
-                        SJTU</a>). </p>
-                    <p> <strong>Mar. 2020 - Mar. 2021</strong>:    Directing four undergraduate innovation projects, two
-                      of which were approved by the Shanghai Innovation Training Program for College Students. Some
-                      students of them cooperated with me to submit <a href="https://arxiv.org/abs/2010.05762"> a TIP
-                        paper</a>, <a href="https://arxiv.org/abs/2012.10860">a T-IM paper</a>, <a
-                        href="https://arxiv.org/abs/2011.13784">a T-Cyb paper</a>. (<a href="http://en.sjtu.edu.cn/">The
-                        Shanghai Jiao Tong University, SJTU</a>). </p>
-                    <p> <strong>Nov. 2020 - Jun. 2021</strong>:    Direct two undergraduate graduation projects of SJTU,
-                      one of which submitted <a
-                        href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_PWCLO-Net_Deep_LiDAR_Odometry_in_3D_Point_Clouds_Using_Hierarchical_CVPR_2021_paper.html">
-                        a CVPR paper</a>.
-                    </p>
-                    <p> <strong>Sep. 2020 - present</strong>:    Direct three masters and a doctor in China University
-                      of Mining and Technology, because my advisor is an adjunct professor there. One of them submitted
-                      an T-II paper. One of them submitted an IJCAI2022 paper. (<a href="http://global.cumt.edu.cn/">The
-                        China University of Mining and Technology, CUMT</a>).
-                    </p>
-                    <p> <strong>Mar. 2021 - Mar. 2022</strong>:    Directing five undergraduate innovation projects.
-                      Some students of them cooperated with me to submit a RAL paper, two ICRA papers.
-                    </p>
-                    <p> <strong>Nov. 2021 - present</strong>:    Directing three undergraduate innovation projects. Some
-                      students of them cooperated with me to submit a T-NNLS paper.
-                    </p>
-                    <p> <strong>Nov. 2021 - present</strong>:    Direct ten undergraduate graduation projects of SJTU.
-                    </p>
-                    <p> <strong>Nov. 2021 - present</strong>:    Direct one more master in China University of Mining
-                      and Technology, because my advisor is an adjunct professor there.
-                    </p>
-                    <p> <strong>Mar. 2022 - present</strong>:    directing four undergraduate innovation projects.
-                      (co-supervised with Ph.D. student Tianchen Deng.)
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="center-text mt-3">
+          <a href="https://scholar.google.com/citations?user=DbZxclcAAAAJ">See all publications<i
+              class="fas fa-angle-right"></i></a>
+        </div>
+
+      </div>
 
 
-            <!--SECTION 7 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Mentoring</heading>
-                    <p>
-                      <strong>Doctor</strong>:
-                      <br>
-                      <strong>Yizhou Wang</strong> (Dec 2020 - present):    China University of Mining and Technology,
-                      CUMT.
-                    </p>
+    </section>
 
 
-                    <p>
-                      <strong>Masters</strong>:
-                      <br>
-                      <strong>Chaokang Jiang (CUMT)</strong> (Sep 2020 - present):    CUMT.<br>
-                      <strong>Huiying Deng (CUMT)</strong> (Sep 2020 - present):    CUMT.<br>
-                      <strong>Xiaolin Wang (CUMT)</strong> (Sep 2020 - present):    CUMT.
-                    </p>
-                    <strong>Liang Song (CUMT)</strong> (Nov 2021 - present):    CUMT.<p></p>
-
-
-                    <p>
-                      <strong>Undergrad Interns</strong>:
-                      <br>
-                      <strong>Huixin Zhang</strong> (SJTU), <strong>Muyao Chen</strong> (SJTU), <strong>Zehang
-                        Shen</strong> (SJTU), <strong>Yunzhe Hu</strong> (SJTU)<br>
-                      <strong>Jiquan Zhong</strong> (SJTU), <strong>Yanfeng Guo</strong> (SJTU), <strong>Shuyang
-                        Jiang</strong> (SJTU), <strong> Zike Cheng</strong> (SJTU)<br>
-                      <strong>Honghao Zeng</strong> (SJTU), <strong>Ziliang Wang</strong> (SJTU), <strong>Haolin
-                        Song</strong> (SJTU), <strong> Wenlong Yi</strong> (SJTU)<br>
-                      <strong>Chensheng Peng</strong> (SJTU), <strong>Shuaiqi Ren</strong> (SJTU), <strong>Jianwan
-                        Luo</strong> (SJTU), <strong> Hanmo Zheng</strong> (SJTU)<br>
-                      <strong>Wenhua Wu</strong> (SJTU), <strong>Xingyao Han</strong> (SJTU), <strong>Qingyu
-                        Wang</strong> (SJTU), <strong> Yuepeng Zhang</strong> (SJTU)<br>
-                      <strong>Tianyi Wang</strong> (SJTU), <strong>Yu Zheng</strong> (SJTU), <strong>Zhiheng
-                        Feng</strong> (SJTU), <strong> Haozhong Zou</strong> (SJTU)<br>
-                      <strong>Shengqi Liu</strong> (SJTU), <strong>Yufei Luo</strong> (SJTU), <strong>Lianting
-                        Huang</strong> (SJTU), <strong> jiuming Liu</strong> (HIT)<br>
-                      <strong>Jiahao Qiu</strong> (SJTU), <strong>Yizhe Liu</strong> (SJTU), <strong> Shijie
-                        Zhao</strong> (SJTU)
-                    </p>
-
-
-                    <p>
-                      <strong>Past Undergrad Interns</strong>:
-                      <br>
-                      <strong>Xinrui Wu</strong> (Nov 2019 - Sep 2021):    Shanghai Jiao Tong University, SJTU, gone to
-                      our lab to pursue master.<br>
-                      <strong>Minjian Xin</strong> (Oct 2019 - Feb 2021):    SJTU, gone to University of California at
-                      San Diego, UCSD to pursue master. <br>
-                      <strong>Jianlong Ye</strong> (Oct 2019 - Aug 2020):    SJTU, gone to SJTU to pursue master. <br>
-                      <strong>ShuangJie Xu</strong> (Oct 2019 - Jul 2020):    SJTU, gone to University of Sydney to
-                      pursue master. <br>
-                      <strong>Jianwei Cai</strong> (Jun 2019 - Aug 2020):    SJTU, gone to SJTU to pursue master. <br>
-                      <strong>Chi Zhang</strong> (Apr 2019 - Sep 2020):    SJTU, gone to SJTU to pursue master. <br>
-                      <strong>Yehui Yang</strong> (Apr 2019 - Dec 2020):    SJTU, gone to SJTU to pursue master. <br>
-                      <strong>Ruiqi Ding</strong> (Nov 2019 - Feb 2021):    SJTU, gone to SJTU to pursue master. <br>
-                      <strong>Hanwen Liu</strong> (Dec 2019 - Mar 2020):    SJTU, gone to Technische Universität
-                      München, TUM to pursue master. <br>
-                      <strong>Xiaoyu Tian</strong> (Apr 2019 - Aug 2021):    SJTU, gone to Columbia University in the
-                      City of New York to pursue master.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-            <!--SECTION 8 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>About Me</heading>
-                    <p align="justify">In my free time, I like reading books on psychology and literature. I like
-                      traveling.
-                      I also enjoy sports and meditate.
-                      <!--</br></br>-->
-                      <!--<span class="highlight"><strong>Internship Position: </strong> If you're interested in ...</span> -->
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-            <!--SECTION 9 -->
-            <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-    <td width="100%" align="middle">
-    <p align="center" style="width: 25% ">
-    <script type="text/javascript" id="clstr_globe"  src="//cdn.clustrmaps.com/globe.js?d=1yPWWuOlXo22MrO9sRinBO9GUjLHe88Yk0lOK35nmQA"></script>
-    </p></td>
-    </tr>
-    </tbody>
-    </table> -->
-
-
-            <!--SECTION 10 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td><br>
-                    <!--<p align="right"><font size="3">Erd&ouml;s = ? </font><br> -->
-                    <p align="right">
-                      <font size="2"> Last update: 2022.02. Thanks for <a href="http://www.cs.berkeley.edu/~barron/">Jon
-                          Barron's</a> and <a href="https://yang7879.github.io/">Bo Yang's</a> websites.</font>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-
+    <!-- <section id="publication" class="home-section wg-collection">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Recent Publications</h1>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="alert alert-note">
+              <div>Quickly discover relevant content by <a href="https://thomasgultzow.com/publication/">filtering
+                  publications</a>.</div>
+            </div>
+            <div class="pub-list-item view-citation" style="margin-bottom:1rem"><i class="far fa-file-alt pub-icon"
+                aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author"><span>Laura M. König</span>, <span>Anila Allmeta</span>,
+                <span>Olga Perski</span>, <span>Eline Suzanne Smit</span>, <span>Katie Newby</span>, <span>Corneel
+                  Vandelanotte</span>, <span>Shoba Poduval</span>, <span>Lorenzo Gordon</span>, <span
+                  class="author-highlighted">Thomas Gültzow</span>, <span>Monique C. Alblas</span>, <span>Emily
+                  Arden-Close</span>, <span>Maya Braun</span>, <span>Klara Greffin</span>, <span>Rachel Hewitt</span>,
+                <span>Liam Knox</span>, <span>Claire McCallum</span>, <span>Thomas McLaren</span>, <span>Dorothy
+                  Szinay</span>, <span>Carmen Peuters</span>, <span>Ann DeSmet</span></span>
+              (2024).
+              <a
+                href="https://thomasgultzow.com/publication/towards-meaningful-interdisciplinary-and-cross-sectoral-digital-health-collaborations-challenges-and-action-oriented-solutions/">Towards
+                meaningful interdisciplinary and cross-sectoral digital health collaborations: Challenges and
+                action-oriented solutions</a>.
+              OSF Preprints.<p><a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://doi.org/https://doi.org/10.31219/osf.io/d9zx7" target="_blank" rel="noopener">DOI</a>
+              </p>
+            </div>
+            <div class="pub-list-item view-citation" style="margin-bottom:1rem"><i class="far fa-file-alt pub-icon"
+                aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author"><span>Filipa Teixeira</span>, <span
+                  class="author-highlighted">Thomas Gültzow</span></span>
+              (2024).
+              <a href="https://thomasgultzow.com/publication/to-new-beginnings/">To new beginnings</a>.
+              The European Health Psychologist.<p></p>
+            </div>
+            <div class="pub-list-item view-citation" style="margin-bottom:1rem"><i class="far fa-file-alt pub-icon"
+                aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author"><span>Haoyi Wang</span>, <span>Kennedy J. I. D’abreu de
+                  Paulo</span>, <span class="author-highlighted">Thomas Gültzow</span>, <span>Hanne M. L.
+                  Zimmermann</span>, <span>Kai J. Jonas</span></span>
+              (2024).
+              <a
+                href="https://thomasgultzow.com/publication/brief-report-determinants-of-potential-sexual-activity-reduction-in-the-face-of-the-monkeypox-epidemic/">Brief
+                report: Determinants of potential sexual activity reduction in the face of the Monkeypox epidemic</a>.
+              International Journal of Behavioral Medicine.<p><a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://doi.org/https://doi.org/10.1007/s12529-023-10252-4" target="_blank"
+                  rel="noopener">DOI</a></p>
+            </div>
+            <div class="see-all"><a href="https://thomasgultzow.com/publication/">See all publications
+                <i class="fas fa-angle-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="contact" class="home-section wg-tag-cloud">
+      <div class="home-section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+          </div>
+          <div class="col-12 col-lg-8">
+            <ul>
+              <li>Email: chensheng_peng [AT] berkeley [DOT] edu</li>
+            </ul>
+            <ul class="fa-ul"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="page-footer">
+    <div class="container">
+      <footer class="site-footer">
+        <p class="powered-by copyright-license-text">© 2024 Me. This work is licensed under <a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC
+            ND 4.0</a></p>
+        <p class="powered-by footer-license-icons"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0"
+            rel="noopener noreferrer" target="_blank" aria-label="Creative Commons"><i
+              class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i></a></p>
+        <p class="powered-by">Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank"
+            rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes"
+            target="_blank" rel="noopener">open source</a> website builder that empowers creators.</p>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>
