@@ -13179,6 +13179,10 @@ html[dir=rtl] body {
     border-radius: 50%
 }
 
+.avatar-roundsquare {
+    border-radius: 25%
+}
+
 .avatar-square {
     border-radius: 3px
 }
