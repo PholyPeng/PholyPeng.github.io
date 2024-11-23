@@ -139,8 +139,8 @@
             <ul class="navbar-nav d-md-inline-flex">
               <li class="nav-item"><a class="nav-link active" href="#about" data-target="#about"><span>About
                     me</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#featured"
-                  data-target="#featured"><span>Research</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#papers" data-target="#papers"><span>Research</span></a>
+              </li>
               <li class="nav-item"><a class="nav-link" href="#contact" data-target="#contact"><span>Contact</span></a>
               </li>
             </ul>
@@ -197,6 +197,7 @@
           </div>
           <div class="col-12 col-lg-8">
             <h1>About me</h1>
+            <!-- , and Professor Kurt Keutzer -->
             <div class="article-style">
               <p>I am a Ph.D. student at UC Berkeley, working with Professor Masayoshi
                 Tomizuka, affiliated with <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley
@@ -232,7 +233,7 @@
       </div>
     </section>
 
-    <section id="featured" class="home-section wg-collection">
+    <section id="papers" class="home-section wg-collection">
       <div class="home-section-bg"></div>
       <div class="container">
         <div class="center-text">
@@ -240,11 +241,213 @@
         </div>
         <div class="center-text">
           <b>* denotes equal contribution</b>
-        </div><br>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-auto">
+            <div class="btn btn-outline-info btn-page-header btn-lg mx-2 filter-btn active"
+              onclick="filterPapers('All', this)">All
+            </div>
+            <div class="btn btn-outline-info btn-page-header btn-lg filter-btn mx-2" onclick="filterPapers('R', this)">
+              Reconstruction
+            </div>
+            <div class="btn btn-outline-info btn-page-header btn-lg filter-btn mx-2" onclick="filterPapers('G', this)">
+              Generation
+            </div>
+            <div class="btn btn-outline-info btn-page-header btn-lg filter-btn mx-2" onclick="filterPapers('P', this)">
+              Perception
+            </div>
+
+          </div>
+        </div>
+
+
+        <br>
         <div class="row align-items-center">
           <div class="col-12">
 
-            <div class="card-simple view-card">
+            <!-- DeSiRe-GS -->
+            <div class="card-simple view-card paper category-R show">
+              <div class="row align-items-center">
+                <img class="col-md-6 col-lg-6" src="./project/desiregs.png" alt="./project/desiregs_alt.png">
+                <div class="col-md-6 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://arxiv.org/abs/2411.11921">DeSiRe-GS: 4D Street Gaussians for Static-Dynamic
+                      Decomposition and Surface Reconstruction for Urban Driving Scenes</a>
+                  </div>
+                  <div class="article-metadata">
+                    <div>
+                      <span class="author-highlighted">Chensheng
+                        Peng*</span>, <span>Chengwei Zhang</span>, <span>Yixiao Wang</span>, <span>Chenfeng Xu</span>,
+                      <span>Yichen Xie</span>,
+                      <span>Wenzhao Zheng</span>, <span>Kurt Keutzer</span>, <span>Masayoshi Tomizuka</span>, <span>Wei
+                        Zhan</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Arxiv</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2411.11921"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="https://github.com/chengweialan/DeSiRe-GS" target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://arxiv.org/abs/2411.11921" class="summary-link">
+                    <div class="article-style">
+                      <p>We present DeSiRe-GS, a self-supervised gaussian splatting representation, enabling effective
+                        static-dynamic decomposition and high-fidelity surface reconstruction in complex driving
+                        scenarios. Combined with the introduced geometric regularizations, our method are able to
+                        address the over-fitting issues
+                        caused by data sparsity in autonomous driving, reconstructing physically plausible Gaussians
+                        that align with object surfaces rather than floating in air.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Diff-GS -->
+            <div class="card-simple view-card paper category-G show">
+              <div class="row align-items-center">
+
+                <div class="col-md-8 col-lg-8">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a href="#">A Lesson in Splats: Teacher-Guided
+                      Diffusion for 3D Gaussian Splats Generation with 2D Supervision</a></div>
+                  <div class="article-metadata">
+                    <div>
+                      <span class="author-highlighted">Chensheng Peng</span>, <span>Ido Sobol</span>, <span>Masayoshi
+                        Tomizuka</span>,
+                      <span>Kurt Keutzer</span>, <span>Chenfeng Xu</span>, <span>Or Litany</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Under review</span>
+                  </div>
+
+                  <!-- <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="#"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="#" target="_blank" rel="noopener">Website</a>
+                  </div> -->
+                  <a href="#" class="summary-link">
+                    <div class="article-style">
+                      <p>We introduce a diffusion model for Gaussian Splats (3DGS) to enable generation of
+                        three-dimensional structures from single images, addressing the ill-posed nature of lifting 2D
+                        inputs to 3D. Existing methods rely on deterministic, feed-forward predictions, which limit
+                        their ability to handle the inherent ambiguity of 3D inference from 2D data. Diffusion models
+                        have recently shown promise as powerful generative models for 3D data, including Gaussian
+                        splats; however, standard diffusion frameworks typically require the target signal and denoised
+                        signal to be in the same modality, which is challenging given the scarcity of 3D data. To
+                        overcome this, we propose a novel training strategy that decouples the denoised modality from
+                        the supervision modality. By using a deterministic model as a noisy teacher to create the noised
+                        signal and transitioning from single-step to multi-step denoising supervised by an image
+                        rendering loss, our approach significantly enhances performance compared to the deterministic
+                        teacher. Additionally, our method is flexible, as it can learn from various 3D Gaussian Splat
+                        (3DGS) teachers with minimal adaptation; we demonstrate this by surpassing the performance of
+                        two different deterministic models as teachers, highlighting the potential generalizability of
+                        our framework. Our approach further incorporates a guidance mechanism to aggregate information
+                        from multiple views, enhancing reconstruction quality when more than one view is available.
+                        </p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-md-4 col-lg-4" src="./project/diffgs.png" alt="./project/diffgs_alt.png">
+              </div>
+            </div>
+
+            <!-- X-Drive -->
+            <div class="card-simple view-card paper category-G show">
+              <div class="row align-items-center">
+                <img class="col-md-6 col-lg-6" src="./project/xdrive.png" alt="./project/xdrive_alt.png">
+                <div class="col-md-6 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://arxiv.org/abs/2411.01123">X-Drive: Cross-modality consistent multi-sensor data
+                      synthesis for driving scenarios</a>
+                  </div>
+                  <div class="article-metadata">
+                    <div>
+                      <span>Yichen Xie*</span>, <span>Chenfeng Xu*</span>, <span class="author-highlighted">Chensheng
+                        Peng</span>,
+                      <span>Shuqi Zhao</span>,
+                      <span>Nhat Ho</span>, <span>Alexander T. Pham</span>,
+                      <span>Mingyu Ding</span>, <span>Masayoshi Tomizuka</span>, <span>Wei Zhan</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Arxiv</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2411.01123"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="https://github.com/yichen928/X-Drive" target="_blank" rel="noopener">Code</a>
+                  </div>
+                  <a href="https://arxiv.org/abs/2411.01123" class="summary-link">
+                    <div class="article-style">
+                      <p>We propose a novel framework, X-DRIVE, to model the joint distribution of point clouds and
+                        multi-view images via a dual-branch latent diffusion model architecture.
+                        Considering the distinct geometrical spaces of the two modalities, X-DRIVE conditions the
+                        synthesis of each modality on the corresponding local regions from the other modality, ensuring
+                        better alignment and realism.
+                        To further handle the spatial ambiguity during denoising, we design the cross-modality condition
+                        module based on epipolar lines to adaptively learn the cross-modality local correspondence.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CompGS -->
+            <div class="card-simple view-card paper category-G show">
+              <div class="row align-items-center">
+
+                <div class="col-md-6 col-lg-6">
+
+                  <div class="section-subheading article-title mb-1 mt-3"><a
+                      href="https://chongjiange.github.io/compgs.html">CompGS:
+                      Unleashing 2D Compositionality for Compositional Text-to-3D via Dynamically Optimizing 3D
+                      Gaussians</a></div>
+                  <div class="article-metadata">
+                    <div>
+                      <span>Chongjian Ge</span>, <span>
+                        Chenfeng Xu</span>, <span>Yuanfeng Ji</span>, <span class="author-highlighted">Chensheng
+                        Peng</span>, <span>Masayoshi Tomizuka</span>, <br> <span> Ping Luo</span>, <span> Mingyu
+                        Ding</span>, <span>Wei Zhan</span>, <span>Varun Jampani</span>
+                    </div>
+                    <span class="article-date">2024</span>
+                    <span class="middot-divider"></span>
+                    <span class="pub-publication">Arxiv</span>
+                  </div>
+
+                  <div class="btn-links">
+                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2410.20723"
+                      target="_blank" rel="noopener">Arxiv</a>
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                      href="https://chongjiange.github.io/compgs.html" target="_blank" rel="noopener">Website</a>
+                  </div>
+                  <a href="https://arxiv.org/abs/2410.20723" class="summary-link">
+                    <div class="article-style">
+                      <p>We introduce CompGS, a novel generative framework that employs 3D Gaussian Splatting (GS) for
+                        efficient, compositional text-to-3D content generation. CompGS automatically
+                        decomposes 3D Gaussians into distinct entity parts, enabling optimization at both the entity and
+                        composition levels.</p>
+                    </div>
+                  </a>
+                </div>
+                <img class="col-md-6 col-lg-6" src="./project/compgs.png" alt="./project/compgs_alt.png">
+              </div>
+            </div>
+
+            <!-- Q-SLAM -->
+            <div class="card-simple view-card paper category-R show">
               <div class="row align-items-center">
                 <img class="col-md-4 col-lg-4" src="./project/qslam.gif" alt="./project/qslam_alt.png">
                 <div class="col-md-8 col-lg-8">
@@ -283,8 +486,8 @@
               </div>
             </div>
 
-
-            <div class="card-simple view-card">
+            <!-- DELFlow -->
+            <div class="card-simple view-card paper category-P show">
               <div class="row align-items-center">
 
                 <div class="col-md-6 col-lg-6">
@@ -324,8 +527,8 @@
               </div>
             </div>
 
-
-            <div class="card-simple view-card">
+            <!-- InterMOT -->
+            <div class="card-simple view-card paper category-P show">
               <div class="row align-items-center">
                 <img class="col-md-6 col-lg-6" src="./project/intermot.gif" alt="./project/intermot_alt.png">
                 <div class="col-md-6 col-lg-6">
@@ -363,8 +566,8 @@
             </div>
 
 
-
-            <div class="card-simple view-card">
+            <!-- PNAS-MOT -->
+            <div class="card-simple view-card paper category-P show">
               <div class="row align-items-center">
 
                 <div class="col-md-6 col-lg-6">
@@ -478,6 +681,41 @@
   <script id="page-data" type="application/json">{"use_headroom":false}</script>
   <script src="js/wowchemy.min.js"></script>
   <script src="js/wowchemy-publication.js" type="module"></script>
+  <script>
+    function filterPapers(category, button) {
+      const papers = document.querySelectorAll('.paper');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update paper visibility
+      papers.forEach(paper => {
+        if (category === 'All') {
+          paper.classList.add('show');
+        } else {
+          if (paper.classList.contains(`category-${category}`)) {
+            paper.classList.add('show');
+          } else {
+            paper.classList.remove('show');
+          }
+        }
+      });
+
+      // Remove the 'active' class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // Add the 'active' class to the clicked button
+      button.classList.add('active');
+    }
+  </script>
+
+  <style>
+    .paper {
+      display: none;
+    }
+
+    .paper.show {
+      display: block;
+    }
+  </style>
 </body>
 
 </html>
